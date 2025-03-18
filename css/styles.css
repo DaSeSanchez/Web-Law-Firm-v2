@@ -313,7 +313,8 @@ section p {
 }
 
 #sobre-nosotros h3 {
-    color: #003366;
+    color: var(--primary-color);
+    font-size: 1.8rem;
 }
 
 .historia,
