@@ -1,89 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio SQL - Sánchez, Quintana & López</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+</head>
 <body>
-    <!-- Header -->
-    <header>
-        <!-- Contenedor del logo y título -->
-        <div class="header-left">
-            <div class="logo">
-                <img src="imgs/logo.png" alt="Logo Estudio SQL">
+<!-- Header -->
+<header>
+    <!-- Contenedor del logo y título -->
+    <div class="header-left">
+        <div class="logo">
+            <img src="logo.png" alt="Logo Estudio SQL">
+        </div>
+        <div class="titulo">
+            <h1>Estudio SQL</h1>
+            <p>Sánchez, Quintana & López</p>
+        </div>
+    </div>
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#el-estudio">El estudio <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#nosotros">Sobre nosotros</a></li>
+                    <li><a href="#casos-de-exito">Casos de éxito</a></li>
+                    <li><a href="#nuestro-proceso">Nuestro proceso</a></li>
+                </ul>
+            </li>
+            <li><a href="#areas-de-practica">Áreas de práctica</a></li>
+            <li class="dropdown">
+                <a href="#recursos">Recursos <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#articulos">Artículos jurídicos</a></li>
+                    <li><a href="#guias-legales">Guías legales</a></li>
+                    <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                </ul>
+            </li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+  <!-- Secciones -->      
+<!-- Sección Hero -->
+<section class="hero" id="inicio">
+    <!-- Video de fondo -->
+    <video autoplay muted loop playsinline>
+        <source src="videos/fondo-hero.mp4" type="video/mp4">
+    </video>
+    
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Justicia con Excelencia</h1>
+            <div class="title-divider"></div>
+            <p>Tu éxito legal es nuestro compromiso.</p>
+        </div>
+        
+        <div class="estadisticas">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-num">98%</div>
+                    <div class="stat-text">Casos exitosos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">30+</div>
+                    <div class="stat-text">Años de experiencia</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">150</div>
+                    <div class="stat-text">Clientes satisfechos</div>
+                </div>
             </div>
-            <div class="titulo">
-                <h1>Estudio SQL</h1>
-                <p>Sánchez, Quintana & López</p>
-            </div>
         </div>
-        <!-- Menú de navegación -->
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#el-estudio">El estudio <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-content">
-                        <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
-                        <li><a href="#casos-de-exito">Casos de éxito</a></li>
-                        <li><a href="#nuestro-proceso">Nuestro proceso</a></li>
-                    </ul>
-                </li>
-                <li><a href="#areas-de-practica">Áreas de práctica</a></li>
-                <li class="dropdown">
-                    <a href="#recursos">Recursos <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-content">
-                        <li><a href="#articulos-juridicos">Artículos jurídicos</a></li>
-                        <li><a href="#guias-legales">Guías legales</a></li>
-                        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
-                    </ul>
-                </li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Secciones -->
-    <!-- Sección Hero -->
-    <section id="inicio" class="hero">
-        <!-- Video de fondo -->
-        <video autoplay muted loop playsinline aria-hidden="false">
-            <source src="videos/herolegal.mp4" type="video/mp4">
-            Tu navegador no soporta videos.
-        </video>
-        <!-- Contenido del Hero -->
-        <div class="hero-content" aria-hidden="false">
-            <div class="hero-text">
-                <h1>Justicia con Excelencia</h1>
-                <div class="title-divider"></div>
-                <p>Tu éxito legal es nuestro compromiso.</p>
-            </div>
-        </div>
-    </section>
-    <!-- Seccion SOBRE NOSOTROS -->
-    <section id="sobre-nosotros">
-        <div class="historia">
-            <h3>Nuestra Historia</h3>
-            <p>Estudio SQL - Sánchez, Quintana & López nació con la convicción de que la excelencia jurídica y la
-                cercanía con nuestros clientes son la clave para una práctica legal efectiva. Fundado en
-                <strong>1995</strong>, nuestro estudio surgió de la visión de tres abogados con una sólida trayectoria,
-                quienes decidieron unir sus conocimientos y experiencia para ofrecer asesoramiento jurídico de alto
-                nivel. Desde entonces, hemos trabajado incansablemente en la defensa de los derechos de nuestros
-                clientes, consolidándonos como un referente en el ámbito legal.
-            </p>
-        </div>
-        <div class="mision">
-            <h3>Nuestra Misión</h3>
-            <p>Nuestro compromiso es brindar soluciones legales innovadoras, eficientes y personalizadas, guiadas por la
-                ética y la transparencia. Nos proponemos ser aliados estratégicos de nuestros clientes, acompañándolos
-                en cada desafío legal con un enfoque proactivo y resolutivo.</p>
-        </div>
-        <!-- Seccion SOBRE NOSOTROS - SOCIOS FUNDADORES-->
+    </div>
+</section>
+
+<section id="nosotros" class="seccion-nosotros section-parallax">
+    <div class="sidebar">
+        <h2>Sobre Nosotros</h2>
+        <p>Conoce nuestra historia, misión y equipo de abogados.</p>
+    </div>
+    <div class="nosotros-content">
+    <div class="historia">
+        <h3>Nuestra Historia</h3>
+        <p>Estudio SQL - Sánchez, Quintana & López nació con la convicción de que la excelencia jurídica y la cercanía con nuestros clientes son la clave para una práctica legal efectiva. Fundado en <strong>1995</strong>, nuestro estudio surgió de la visión de tres abogados con una sólida trayectoria, quienes decidieron unir sus conocimientos y experiencia para ofrecer asesoramiento jurídico de alto nivel. Desde entonces, hemos trabajado incansablemente en la defensa de los derechos de nuestros clientes, consolidándonos como un referente en el ámbito legal.</p>
+    </div>
+
+    <div class="mision">
+        <h3>Nuestra Misión</h3>
+        <p>Nuestro compromiso es brindar soluciones legales innovadoras, eficientes y personalizadas, guiadas por la ética y la transparencia. Nos proponemos ser aliados estratégicos de nuestros clientes, acompañándolos en cada desafío legal con un enfoque proactivo y resolutivo.</p>
+    </div>
+
         <h3>Socios Fundadores</h3>
         <div class="team-container">
             <div class="team-card">
@@ -91,50 +104,43 @@
                 <h4>Dra. María González</h4>
                 <p>Graduada en la Universidad de Buenos Aires (2005)</p>
                 <div class="social-links">
-                    <a href="mailto:maria.gonzalez@estudiojuridico.com" class="email-icon"><i
-                            class="fas fa-envelope"></i></a>
-                    <a href="https://wa.me/541112345678" class="whatsapp-icon" target="_blank"><i
-                            class="fab fa-whatsapp"></i></a>
-                    <a href="#" class="linkedin-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:maria.gonzalez@estudiojuridico.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/541112345678"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div class="team-card">
-                <img src="imgs/personas/persona6.jpg" alt="Dr. Carlos Mendoza">
+                <img src="imgs/personas/persona1.jpg" alt="Dr. Carlos Mendoza">
                 <h4>Dr. Carlos Mendoza</h4>
                 <p>Graduado en la Universidad de Córdoba (2008)</p>
                 <div class="social-links">
-                    <a href="mailto:carlos.mendoza@estudiojuridico.com" class="email-icon"><i
-                            class="fas fa-envelope"></i></a>
-                    <a href="https://wa.me/541123456789" class="whatsapp-icon" target="_blank"><i
-                            class="fab fa-whatsapp"></i></a>
-                    <a href="#" class="linkedin-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:carlos.mendoza@estudiojuridico.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/541123456789"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div class="team-card">
-                <img src="imgs/personas/persona8.jpg" alt="Dr. Andrés López">
+                <img src="imgs/personas/persona3.jpg" alt="Dr. Andrés López">
                 <h4>Dr. Andrés López</h4>
                 <p>Graduado en la Universidad Nacional de La Plata (2010)</p>
                 <div class="social-links">
-                    <a href="mailto:andres.lopez@estudiojuridico.com" class="email-icon"><i
-                            class="fas fa-envelope"></i></a>
-                    <a href="https://wa.me/541134567890" class="whatsapp-icon" target="_blank"><i
-                            class="fab fa-whatsapp"></i></a>
-                    <a href="#" class="linkedin-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:andres.lopez@estudiojuridico.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/541134567890"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
-        <!-- Seccion SOBRE NOSOTROS - ABOGADOS SENIOR -->
+
         <h3>Abogados Senior</h3>
         <div class="team-container">
             <div class="team-card">
-                <img src="imgs/personas/persona4.jpg" alt="Dra. Laura Vargas">
+                <img src="imgs/personas/persona2.jpg" alt="Dra. Laura Vargas">
                 <h4>Dra. Laura Vargas</h4>
                 <p>Graduada en la Universidad de Rosario (2012)</p>
                 <div class="social-links">
                     <a href="mailto:senior2@email.com"><i class="fas fa-envelope"></i></a>
                     <a href="https://wa.me/123456789"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://linkedin.com/in/senior2"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://instagram.com/senior2"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div class="team-card">
@@ -145,7 +151,6 @@
                     <a href="mailto:senior2@email.com"><i class="fas fa-envelope"></i></a>
                     <a href="https://wa.me/123456789"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://linkedin.com/in/senior2"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://instagram.com/senior2"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div class="team-card">
@@ -156,194 +161,360 @@
                     <a href="mailto:senior3@email.com"><i class="fas fa-envelope"></i></a>
                     <a href="https://wa.me/123456789"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://linkedin.com/in/senior3"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://instagram.com/senior3"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Seccion CASOS DE EXITO -->
-    <section id="casos-de-exito">
+    </div>
+</section>
+
+<section id="casos-de-exito" class="seccion-recursos section-parallax">
+    <div class="sidebar">
         <h2>Casos de Éxito</h2>
-        <p>Algunos de los casos en los que hemos tenido éxito.</p>
-    </section>
-    <!-- Seccion NUESTRO PROCESO -->
-    <section id="nuestro-proceso">
+        <p>Historias destacadas de litigios y negociaciones resueltas con éxito.</p>
+    </div>
+    <div class="recursos-content">
+        <div class="tab-content active" id="casos">
+            <div class="recurso-card">
+                <h3>Defensa Corporativa Multimillonaria</h3>
+                <p>Resolución favorable en litigio comercial internacional con impacto en 15 países.</p>
+                <a href="#" class="recurso-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="recurso-card">
+                <h3>Absolución en Caso Penal Complejo</h3>
+                <p>Libertad de cliente acusado en caso de alto perfil mediático.</p>
+                <a href="#" class="recurso-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="recurso-card">
+                <h3>Negociación Colectiva Exitosa</h3>
+                <p>Acuerdo beneficioso para más de 500 empleados en conflicto laboral.</p>
+                <a href="#" class="recurso-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="recurso-card">
+                <h3>Recuperación de Propiedad</h3>
+                <p>Resolución favorable en disputa inmobiliaria de alto valor.</p>
+                <a href="#" class="recurso-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="recurso-card">
+                <h3>Arbitraje Internacional</h3>
+                <p>Victoria en arbitraje comercial entre empresas multinacionales.</p>
+                <a href="#" class="recurso-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="recurso-card">
+                <h3>Protección de Propiedad Intelectual</h3>
+                <p>Defensa exitosa de derechos de autor en caso de plagio.</p>
+                <a href="#" class="recurso-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="nuestro-proceso" class="seccion-proceso section-parallax">
+    <div class="sidebar">
         <h2>Nuestro Proceso</h2>
-        <p>Descubre cómo trabajamos para lograr los mejores resultados.</p>
-    </section>
-    <!-- Seccion AREAS DE PRACTICA -->
-    <section id="areas-de-practica" class="areas-de-practica">
-        <!-- Barra lateral -->
-        <div class="areas-sidebar">
-            <h2>Áreas de Práctica</h2>
-            <p>Explora nuestras especialidades y cómo podemos ayudarte.</p>
+        <p>Compromiso y Estrategia en Cada Etapa del Proceso Judicial.</p>
+    </div>
+    <div class="proceso-steps">
+        <div class="step-card">
+            <div class="step-num">1</div>
+            <h3>Evaluación Integral</h3>
+            <p>Análisis detallado de tu situación legal con equipo multidisciplinario.</p>
         </div>
-        <!-- Grid de tarjetas -->
-        <div class="areas-grid">
-            <div class="area-card">
-                <div class="area-icon"><i class="fas fa-briefcase fa-2x"></i></div>
-                <h3>Derecho corporativo</h3>
-                <p>Asesoramiento en la constitución de empresas, contratos comerciales y fusiones.</p>
-            </div>
-            <div class="area-card">
-                <div class="area-icon"><i class="fas fa-gavel fa-2x"></i></div>
-                <h3>Derecho penal</h3>
-                <p>Defensa legal en procesos penales, derechos del acusado y representación en juicios.</p>
-            </div>
-            <div class="area-card">
-                <div class="area-icon"><i class="fas fa-users fa-2x"></i></div>
-                <h3>Derecho laboral</h3>
-                <p>Asesoría en despidos, contratos de trabajo, negociaciones colectivas y más.</p>
-            </div>
-            <div class="area-card">
-                <div class="area-icon"><i class="fas fa-home fa-2x"></i></div>
-                <h3>Derecho inmobiliario</h3>
-                <p>Asesoramiento en compra-venta de inmuebles, contratos de arrendamiento y más.</p>
-            </div>
-            <div class="area-card">
-                <div class="area-icon"><i class="fas fa-balance-scale fa-2x"></i></div>
-                <h3>Derecho civil</h3>
-                <p>Contratos, responsabilidad civil, herencias, divorcios y más asuntos familiares.</p>
-            </div>
-            <div class="area-card">
-                <div class="area-icon"><i class="fas fa-university fa-2x"></i></div>
-                <h3>Derecho administrativo</h3>
-                <p>Relaciones entre individuos y organismos públicos, licitaciones y recursos administrativos.</p>
-            </div>
-            <div class="area-card">
-                <div class="area-icon"><i class="fas fa-piggy-bank fa-2x"></i></div>
-                <h3>Derecho financiero</h3>
-                <p>Asesoría sobre inversiones, créditos, banca y cumplimiento normativo financiero.</p>
-            </div>
-            <div class="area-card">
-                <div class="area-icon"><i class="fas fa-globe fa-2x"></i></div>
-                <h3>Derecho internacional</h3>
-                <p>Asistencia legal en transacciones internacionales, arbitrajes y tratados.</p>
-            </div>
-            <div class="area-card">
-                <div class="area-icon"><i class="fas fa-copyright fa-2x"></i></div>
-                <h3>Propiedad intelectual</h3>
-                <p>Registro de marcas, patentes, derechos de autor y protección de la innovación.</p>
-            </div>
-            <div class="area-card">
-                <div class="area-icon"><i class="fas fa-handshake fa-2x"></i></div>
-                <h3>Derecho mercantil</h3>
-                <p>Asesoría en comercio, contratos mercantiles, franquicias y competencia desleal.</p>
-            </div>
+        <div class="step-card">
+            <div class="step-num">2</div>
+            <h3>Estrategia Legal</h3>
+            <p>Desarrollo de plan personalizado para cada caso.</p>
         </div>
-    </section>
-    <!-- Seccion RECURSOS -->
-    <section id="recursos">
-        <h2>Recursos</h2>
-        <p>Recursos útiles para nuestros clientes.</p>
-    </section>
-    <!-- Seccion ARTICULOS JURIDICOS -->
-    <section id="articulos-juridicos">
+        <div class="step-card">
+            <div class="step-num">3</div>
+            <h3>Implementación</h3>
+            <p>Ejecución de la estrategia con seguimiento constante.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-num">4</div>
+            <h3>Negociación</h3>
+            <p>Búsqueda de soluciones favorables fuera de tribunales.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-num">5</div>
+            <h3>Resolución</h3>
+            <p>Conclusión exitosa del caso con informe final.</p>
+        </div>
+    </div>
+</section>
+
+    <section id="areas-de-practica" class="areas-de-practica section-parallax">
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <h2>Áreas de Práctica</h2>
+        <p>Explora nuestras especialidades y cómo podemos ayudarte.</p>
+    </div>
+    <!-- Grid de tarjetas -->
+    <div class="areas-grid">
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-briefcase fa-2x"></i></div>
+            <h3>Derecho corporativo</h3>
+            <p>Asesoramiento en la constitución de empresas, contratos comerciales y fusiones.</p>
+        </div>
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-gavel fa-2x"></i></div>
+            <h3>Derecho penal</h3>
+            <p>Defensa legal en procesos penales, derechos del acusado y representación en juicios.</p>
+        </div>
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-users fa-2x"></i></div>
+            <h3>Derecho laboral</h3>
+            <p>Asesoría en despidos, contratos de trabajo, negociaciones colectivas y más.</p>
+        </div>
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-home fa-2x"></i></div>
+            <h3>Derecho inmobiliario</h3>
+            <p>Asesoramiento en compra-venta de inmuebles, contratos de arrendamiento y más.</p>
+        </div>
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-balance-scale fa-2x"></i></div>
+            <h3>Derecho civil</h3>
+            <p>Contratos, responsabilidad civil, herencias, divorcios y más asuntos familiares.</p>
+        </div>
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-university fa-2x"></i></div>
+            <h3>Derecho administrativo</h3>
+            <p>Relaciones entre individuos y organismos públicos, licitaciones y recursos administrativos.</p>
+        </div>
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-piggy-bank fa-2x"></i></div>
+            <h3>Derecho financiero</h3>
+            <p>Asesoría sobre inversiones, créditos, banca y cumplimiento normativo financiero.</p>
+        </div>
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-globe fa-2x"></i></div>
+            <h3>Derecho internacional</h3>
+            <p>Asistencia legal en transacciones internacionales, arbitrajes y tratados.</p>
+        </div>
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-copyright fa-2x"></i></div>
+            <h3>Propiedad intelectual</h3>
+            <p>Registro de marcas, patentes, derechos de autor y protección de la innovación.</p>
+        </div>
+    </div>
+</section>
+
+<section id="articulos" class="seccion-recursos section-parallax">
+    <div class="sidebar">
         <h2>Artículos Jurídicos</h2>
         <p>Artículos escritos por nuestros abogados.</p>
-    </section>
-    <!-- Seccion GUIAS LEGALES-->
-    <section id="guias-legales">
-        <h2>Guías Legales</h2>
-        <p>Guías prácticas sobre temas legales.</p>
-    </section>
-    <!-- Seccion PREGUNTAS FRECUENTES -->
-    <section id="preguntas-frecuentes">
-        <h2>Preguntas Frecuentes</h2>
-        <p>Respuestas a las preguntas más comunes.</p>
-    </section>
-    <!---------------------------------------------------------------------------------------------------------------------->
-    <!--========================================= SECCION CONTACTO =======================================================-->
-    <!---------------------------------------------------------------------------------------------------------------------->
-    <section id="contacto" class="contact-section">
-        <!-- Video de fondo -->
-        <video autoplay muted loop playsinline class="background-video">
-            <source src="videos/herolegal4.mp4" type="video/mp4">
-            Tu navegador no soporta videos.
-        </video>
-        <div class="contact-container">
-            <!-- Barra lateral -->
-            <div class="contact-sidebar">
-                <h2>Contáctanos</h2>
-                <p>Estamos para ayudarte.</p>
+    </div>
+    <div class="recursos-content">
+        <div class="tab-content active" id="articulos">
+            <div class="recurso-card">
+                <h3>Derecho Corporativo: Lo que debes saber</h3>
+                <p>Guía completa sobre contratos y fusiones empresariales.</p>
+                <a href="#" class="recurso-link">Leer más <i class="fas fa-arrow-right"></i></a>
             </div>
-            <!-- Tarjetas: Información de contacto y formulario -->
-            <div class="contact-cards">
-                <!-- Información de contacto -->
-                <div class="contact-card">
-                    <h3>Información de contacto</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <span>+54 9 11 1234-5678</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <span>Lunes a Viernes de 9:00hs a 18:00hs</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Av. Siempre Viva 742, Buenos Aires, Argentina</span>
-                    </div>
-                    <div class="google-map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0054390241967!2d-58.3867115249571!3d-34.6040239729541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac59a5bd441%3A0x1408e2f06974627!2sAv.%20Corrientes%201234%2C%20C1043AAZ%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1739907147206!5m2!1ses!2sar"
-                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-                <!-- Formulario -->
-                <div class="contact-card">
-                    <h3>Envíanos tu consulta</h3>
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Nombre completo" required />
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Correo electrónico" required />
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="Teléfono de contacto" />
-                        </div>
-                        <div class="form-group">
-                            <select required>
-                                <option value="">Selecciona un área</option>
-                                <option>Derecho corporativo</option>
-                                <option>Derecho penal</option>
-                                <option>Derecho familiar</option>
-                                <option>Otro</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea rows="5" placeholder="Describe tu consulta" required></textarea>
-                        </div>
-                        <button type="submit">Enviar consulta</button>
-                    </form>
-                </div>
+<div class="recurso-card">
+    <h3>Derecho Laboral: Fundamentos y Obligaciones</h3>
+    <p>Todo lo que necesitas saber sobre contratos laborales y derechos de los trabajadores.</p>
+    <a href="#" class="recurso-link">Leer más <i class="fas fa-arrow-right"></i></a>
+</div>
+
+<div class="recurso-card">
+    <h3>Propiedad Intelectual: Protege tus Creaciones</h3>
+    <p>Guía esencial para entender patentes, marcas y derechos de autor.</p>
+    <a href="#" class="recurso-link">Leer más <i class="fas fa-arrow-right"></i></a>
+</div>
+
+<div class="recurso-card">
+    <h3>Derecho Fiscal: Normativas y Cumplimiento</h3>
+    <p>Información clave sobre impuestos, declaraciones y obligaciones fiscales.</p>
+    <a href="#" class="recurso-link">Leer más <i class="fas fa-arrow-right"></i></a>
+</div>
+
+<div class="recurso-card">
+    <h3>Derecho de Familia: Herencias y Divorcios</h3>
+    <p>Conoce los aspectos legales de herencias, divorcios y custodias.</p>
+    <a href="#" class="recurso-link">Leer más <i class="fas fa-arrow-right"></i></a>
+</div>
+        </div>
+        <div class="tab-content" id="guias">
+            <div class="recurso-card">
+                <h3>Guía de Derecho Laboral</h3>
+                <p>Todo lo que necesitas saber sobre despidos y contratos.</p>
+                <a href="#" class="recurso-link">Descargar <i class="fas fa-download"></i></a>
             </div>
         </div>
-    </section>
+        <div class="tab-content" id="videos">
+            <div class="recurso-card">
+                <h3>Video: Cómo proteger tu propiedad intelectual</h3>
+                <p>Consejos prácticos de nuestros expertos.</p>
+                <a href="#" class="recurso-link">Ver video <i class="fas fa-play"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- CTA Flotante -->
-    <a href="tu-enlace-a-consulta" class="cta-button">
-        <i class="fab fa-whatsapp"></i> Consulta gratuita
-    </a>
+<section id="guias-legales" class="seccion-recursos section-parallax">
+    <div class="sidebar">
+        <h2>Guías Legales</h2>
+        <p>Descarga nuestras guías jurídicas para conocer tus derechos y obligaciones.</p>
+    </div>
+    <div class="recursos-content">
+        <div class="tab-content active" id="guias">
+            <div class="recurso-card">
+                <h3>Guía de Derecho Laboral</h3>
+                <p>Conoce los derechos y deberes tanto de empleadores como de trabajadores.</p>
+                <a href="#" class="recurso-link">Descargar <i class="fas fa-download"></i></a>
+            </div>
+            <div class="recurso-card">
+                <h3>Guía de Derecho Fiscal</h3>
+                <p>Información clave sobre impuestos y regulaciones fiscales en el país.</p>
+                <a href="#" class="recurso-link">Descargar <i class="fas fa-download"></i></a>
+            </div>
+            <div class="recurso-card">
+                <h3>Guía de Propiedad Intelectual</h3>
+                <p>Cómo proteger marcas, patentes y derechos de autor de manera efectiva.</p>
+                <a href="#" class="recurso-link">Descargar <i class="fas fa-download"></i></a>
+            </div>
+            <div class="recurso-card">
+                <h3>Guía de Derecho de Familia</h3>
+                <p>Aspectos legales sobre herencias, divorcios y custodia de menores.</p>
+                <a href="#" class="recurso-link">Descargar <i class="fas fa-download"></i></a>
+            </div>
+            <div class="recurso-card">
+                <h3>Guía de Constitución de Empresas</h3>
+                <p>Pasos esenciales para la creación y formalización de una empresa.</p>
+                <a href="#" class="recurso-link">Descargar <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="preguntas-frecuentes" class="seccion-faq section-parallax">
+    <div class="sidebar">
+        <h2>Preguntas Frecuentes</h2>
+        <p>Respuestas Claras a Tus Dudas Legales Más Comunes.</p>
+    </div>
+    <div class="faq-accordion">
+        <div class="faq-item">
+    <button class="faq-question">¿Cómo iniciar un proceso?<i class="fas fa-chevron-down"></i></button>
+    <div class="faq-answer">
+        <p>Agende una consulta inicial sin costo para evaluar su caso y recibir asesoramiento personalizado.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">¿Qué áreas del derecho cubren?<i class="fas fa-chevron-down"></i></button>
+    <div class="faq-answer">
+        <p>Nuestro estudio cubre derecho corporativo, laboral, familiar, penal y propiedad intelectual, entre otros.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">¿Cuánto cuesta una consulta legal?<i class="fas fa-chevron-down"></i></button>
+    <div class="faq-answer">
+        <p>La primera consulta es gratuita. Los honorarios posteriores dependen de la complejidad del caso.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">¿Trabajan con casos internacionales?<i class="fas fa-chevron-down"></i></button>
+    <div class="faq-answer">
+        <p>Sí, contamos con experiencia en casos internacionales y colaboramos con estudios en el extranjero.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">¿Qué documentación debo llevar a la consulta?<i class="fas fa-chevron-down"></i></button>
+    <div class="faq-answer">
+        <p>Recomendamos llevar cualquier documento relevante, como contratos, notificaciones o pruebas relacionadas con su caso.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">¿Ofrecen servicios de mediación?<i class="fas fa-chevron-down"></i></button>
+    <div class="faq-answer">
+        <p>Sí, promovemos la resolución de conflictos mediante mediación para evitar procesos judiciales largos y costosos.</p>
+    </div>
+</div>
+    </div>
+</section>
+
+   <section id="contacto" class="contact-section section-parallax">
+        <div class="sidebar">
+            <h2>Contáctanos</h2>
+            <p>Estamos para ayudarte.</p>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="contact-info">
+            <h3>Información de contacto</h3>
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>+54 9 11 1234-5678</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <span>Lunes a Viernes, 9:00 - 18:00</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Av. Corrientes 123, Buenos Aires</span>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-whatsapp"></i>
+                <a href="https://wa.me/5491112345678">Enviar mensaje</a>
+            </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="contact-form-container">
+            <h3>Envíanos tu consulta</h3>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Nombre completo" required />
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Correo electrónico" required />
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Teléfono de contacto" />
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Selecciona un área</option>
+                        <option>Derecho corporativo</option>
+                        <option>Derecho penal</option>
+                        <option>Derecho familiar</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Describe tu consulta" required></textarea>
+                </div>
+                <button type="submit">Enviar consulta</button>
+            </form>
+        </div>
+</section>
+
+   <!-- CTA Flotante -->
+<a href="https://wa.me/5491112345678" class="cta-button">
+    <i class="fab fa-whatsapp"></i> Consulta gratuita
+</a>
+
     <!-- Footer -->
     <footer>
-        <div class="footer-trigger"></div>
+<div class="footer-trigger"></div>
         <div class="footer-columns">
             <div class="footer-column contacto">
                 <h3>Contacto</h3>
                 <p><i class="fas fa-phone"></i>+54 11 1234-5678</p>
                 <p><i class="fas fa-envelope"></i>contacto@abogadosyasociados.com</p>
-                <p><i class="fas fa-map-marker-alt"></i>Av. Corrientes 1234, Ciudad Autónoma de Buenos Aires, Argentina.
-                </p>
-                <!-- *********************** MAPA DE GOOGLE *********************** -->
-                <div class="google-map">
-                    <iframe
+                <p><i class="fas fa-map-marker-alt"></i>Av. Corrientes 1234, Ciudad Autónoma de Buenos Aires, Argentina.</p>
+<!-- *********************** MAPA DE GOOGLE *********************** -->
+                <div class="google-map"><iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0054390241967!2d-58.3867115249571!3d-34.6040239729541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac59a5bd441%3A0x1408e2f06974627!2sAv.%20Corrientes%201234%2C%20C1043AAZ%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1739907147206!5m2!1ses!2sar"
-                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
-                    </iframe>
-                </div>
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
             </div>
             <div class="footer-column">
                 <h3>Enlaces Rápidos</h3>
@@ -364,30 +535,28 @@
                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
-            <div class="footer-column">
-                <h3>Suscríbete a nuestro boletín</h3>
-                <p class="newsletter-description">Recibe las últimas noticias y actualizaciones legales directamente en
-                    tu correo.</p>
-                <form action="newsletter_subscription.php" method="POST" class="newsletter-form">
-                    <input type="email" name="email" placeholder="Tu correo electrónico" required>
-                    <button type="submit" class="btn-subscribe">Suscribirse</button>
-                </form>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2023 Estudio SQL - Sánchez, Quintana & López. Todos los derechos reservados.</p>
-                <p>
-                    <a href="#aviso-legal">Aviso legal</a> |
-                    <a href="#politicas-de-privacidad">Políticas de privacidad</a>
-                </p>
-            </div>
-            <!-- Scrollear al principio -->
-            <div class="back-to-top">
-                <a href="#" class="back-to-top-link">
-                    <i class="fas fa-chevron-up"></i>
-                    <span>Volver arriba</span>
-                </a>
-            </div>
+<div class="footer-column">
+    <h3>Suscríbete a nuestro boletín</h3>
+    <p class="newsletter-description">Recibe las últimas noticias y actualizaciones legales directamente en tu correo.</p>
+    <form action="newsletter_subscription.php" method="POST" class="newsletter-form">
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>                                                
+        <button type="submit" class="btn-subscribe">Suscribirse</button>
+    </form>
+</div>
+        <div class="copyright">
+            <p>&copy; 2023 Estudio SQL - Sánchez, Quintana & López. Todos los derechos reservados.</p>
+            <p>
+                <a href="#aviso-legal">Aviso legal</a> | 
+                <a href="#politicas-de-privacidad">Políticas de privacidad</a>
+            </p>
+        </div>
+<!-- Scrollear al principio -->
+<div class="back-to-top">
+    <a href="#" class="back-to-top-link">
+        <i class="fas fa-chevron-up"></i>  
+        <span>Volver arriba</span>
+    </a>
+</div>
     </footer>
 </body>
-
 </html>
