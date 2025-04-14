@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio SQL - Sánchez, Quintana & López</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
@@ -15,7 +15,7 @@
     <!-- Contenedor del logo y título -->
     <div class="header-left">
         <div class="logo">
-            <img src="imgs/logo.png" alt="Logo Estudio SQL">
+            <img src="../imgs/logo.png" alt="Logo Estudio SQL">
         </div>
         <div class="titulo">
             <h1>Estudio SQL</h1>
@@ -25,59 +25,83 @@
     <!-- Menú de navegación -->
     <nav>
         <ul>
-            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="../index.html">Inicio</a></li>
             <li class="dropdown">
                 <a href="#el-estudio">El estudio <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-content">
-                    <li><a href="pages/nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="pages/casos_exito.html">Casos de éxito</a></li>
-                    <li><a href="pages/nuestro_proceso.html">Nuestro proceso</a></li>
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="casos_exito.html">Casos de éxito</a></li>
+                    <li><a href="nuestro_proceso.html">Nuestro proceso</a></li>
                 </ul>
             </li>
-            <li><a href="pages/areas_de_practica.html">Áreas de práctica</a></li>
+            <li><a href="areas_de_practica.html">Áreas de práctica</a></li>
             <li class="dropdown">
                 <a href="#recursos">Recursos <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-content">
-                    <li><a href="pages/articulos.html">Artículos jurídicos</a></li>
-                    <li><a href="pages/guias_legales.html">Guías legales</a></li>
-                    <li><a href="pages/faq.html">Preguntas frecuentes</a></li>
+                    <li><a href="articulos.html">Artículos jurídicos</a></li>
+                    <li><a href="guias_legales.html">Guías legales</a></li>
+                    <li><a href="faq.html">Preguntas frecuentes</a></li>
                 </ul>
             </li>
-            <li><a href="pages/contacto.html">Contacto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
 </header>
   <!-- Secciones -->      
-<!-- Sección Hero -->
-<section class="hero" id="inicio">
-    <!-- Video de fondo -->
-    <video autoplay muted loop playsinline>
-        <source src="videos/fondo-hero.mp4" type="video/mp4">
-    </video>
-    
-    <div class="hero-content">
-        <div class="hero-text">
-            <h1>Justicia con Excelencia</h1>
-            <div class="title-divider"></div>
-            <p>Tu éxito legal es nuestro compromiso.</p>
+<section id="contacto" class="contact-section section-parallax">
+    <div class="sidebar">
+        <h2>Contáctanos</h2>
+        <p>Estamos para ayudarte.</p>
+    </div>
+
+    <!-- Información de contacto -->
+    <div class="contact-info">
+        <h3>Información de contacto</h3>
+        <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+54 9 11 1234-5678</span>
         </div>
-        
-        <div class="estadisticas">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-num">98%</div>
-                    <div class="stat-text">Casos exitosos</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-num">30+</div>
-                    <div class="stat-text">Años de experiencia</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-num">150</div>
-                    <div class="stat-text">Clientes satisfechos</div>
-                </div>
+        <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <span>Lunes a Viernes, 9:00 - 18:00</span>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Av. Corrientes 123, Buenos Aires</span>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/5491112345678">Enviar mensaje</a>
+        </div>
+    </div>
+
+    <!-- Formulario -->
+    <div class="contact-form-container">
+        <h3>Envíanos tu consulta</h3>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Nombre completo" required />
             </div>
-        </div>
+            <div class="form-group">
+                <input type="email" placeholder="Correo electrónico" required />
+            </div>
+            <div class="form-group">
+                <input type="tel" placeholder="Teléfono de contacto" />
+            </div>
+            <div class="form-group">
+                <select required>
+                    <option value="">Selecciona un área</option>
+                    <option>Derecho corporativo</option>
+                    <option>Derecho penal</option>
+                    <option>Derecho familiar</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea rows="5" placeholder="Describe tu consulta" required></textarea>
+            </div>
+            <button type="submit">Enviar consulta</button>
+        </form>
     </div>
 </section>
 

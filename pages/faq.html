@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio SQL - Sánchez, Quintana & López</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
@@ -15,7 +15,7 @@
     <!-- Contenedor del logo y título -->
     <div class="header-left">
         <div class="logo">
-            <img src="imgs/logo.png" alt="Logo Estudio SQL">
+            <img src="../imgs/logo.png" alt="Logo Estudio SQL">
         </div>
         <div class="titulo">
             <h1>Estudio SQL</h1>
@@ -25,59 +25,76 @@
     <!-- Menú de navegación -->
     <nav>
         <ul>
-            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="../index.html">Inicio</a></li>
             <li class="dropdown">
                 <a href="#el-estudio">El estudio <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-content">
-                    <li><a href="pages/nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="pages/casos_exito.html">Casos de éxito</a></li>
-                    <li><a href="pages/nuestro_proceso.html">Nuestro proceso</a></li>
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="casos_exito.html">Casos de éxito</a></li>
+                    <li><a href="nuestro_proceso.html">Nuestro proceso</a></li>
                 </ul>
             </li>
-            <li><a href="pages/areas_de_practica.html">Áreas de práctica</a></li>
+            <li><a href="areas_de_practica.html">Áreas de práctica</a></li>
             <li class="dropdown">
                 <a href="#recursos">Recursos <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-content">
-                    <li><a href="pages/articulos.html">Artículos jurídicos</a></li>
-                    <li><a href="pages/guias_legales.html">Guías legales</a></li>
-                    <li><a href="pages/faq.html">Preguntas frecuentes</a></li>
+                    <li><a href="articulos.html">Artículos jurídicos</a></li>
+                    <li><a href="guias_legales.html">Guías legales</a></li>
+                    <li><a href="faq.html">Preguntas frecuentes</a></li>
                 </ul>
             </li>
-            <li><a href="pages/contacto.html">Contacto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
 </header>
   <!-- Secciones -->      
-<!-- Sección Hero -->
-<section class="hero" id="inicio">
-    <!-- Video de fondo -->
-    <video autoplay muted loop playsinline>
-        <source src="videos/fondo-hero.mp4" type="video/mp4">
-    </video>
-    
-    <div class="hero-content">
-        <div class="hero-text">
-            <h1>Justicia con Excelencia</h1>
-            <div class="title-divider"></div>
-            <p>Tu éxito legal es nuestro compromiso.</p>
-        </div>
-        
-        <div class="estadisticas">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-num">98%</div>
-                    <div class="stat-text">Casos exitosos</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-num">30+</div>
-                    <div class="stat-text">Años de experiencia</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-num">150</div>
-                    <div class="stat-text">Clientes satisfechos</div>
-                </div>
-            </div>
-        </div>
+<section id="preguntas-frecuentes" class="seccion-faq section-parallax">
+    <div class="sidebar">
+        <h2>Preguntas Frecuentes</h2>
+        <p>Respuestas Claras a Tus Dudas Legales Más Comunes.</p>
+    </div>
+    <div class="faq-accordion">
+        <div class="faq-item">
+    <button class="faq-question">¿Cómo iniciar un proceso?<i class="fas fa-chevron-down"></i></button>
+    <div class="faq-answer">
+        <p>Agende una consulta inicial sin costo para evaluar su caso y recibir asesoramiento personalizado.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">¿Qué áreas del derecho cubren?<i class="fas fa-chevron-down"></i></button>
+    <div class="faq-answer">
+        <p>Nuestro estudio cubre derecho corporativo, laboral, familiar, penal y propiedad intelectual, entre otros.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">¿Cuánto cuesta una consulta legal?<i class="fas fa-chevron-down"></i></button>
+    <div class="faq-answer">
+        <p>La primera consulta es gratuita. Los honorarios posteriores dependen de la complejidad del caso.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">¿Trabajan con casos internacionales?<i class="fas fa-chevron-down"></i></button>
+    <div class="faq-answer">
+        <p>Sí, contamos con experiencia en casos internacionales y colaboramos con estudios en el extranjero.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">¿Qué documentación debo llevar a la consulta?<i class="fas fa-chevron-down"></i></button>
+    <div class="faq-answer">
+        <p>Recomendamos llevar cualquier documento relevante, como contratos, notificaciones o pruebas relacionadas con su caso.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">¿Ofrecen servicios de mediación?<i class="fas fa-chevron-down"></i></button>
+    <div class="faq-answer">
+        <p>Sí, promovemos la resolución de conflictos mediante mediación para evitar procesos judiciales largos y costosos.</p>
+    </div>
+</div>
     </div>
 </section>
 

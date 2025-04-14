@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio SQL - Sánchez, Quintana & López</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
@@ -15,7 +15,7 @@
     <!-- Contenedor del logo y título -->
     <div class="header-left">
         <div class="logo">
-            <img src="imgs/logo.png" alt="Logo Estudio SQL">
+            <img src="../imgs/logo.png" alt="Logo Estudio SQL">
         </div>
         <div class="titulo">
             <h1>Estudio SQL</h1>
@@ -25,57 +25,65 @@
     <!-- Menú de navegación -->
     <nav>
         <ul>
-            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="../index.html">Inicio</a></li>
             <li class="dropdown">
                 <a href="#el-estudio">El estudio <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-content">
-                    <li><a href="pages/nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="pages/casos_exito.html">Casos de éxito</a></li>
-                    <li><a href="pages/nuestro_proceso.html">Nuestro proceso</a></li>
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="casos_exito.html">Casos de éxito</a></li>
+                    <li><a href="nuestro_proceso.html">Nuestro proceso</a></li>
                 </ul>
             </li>
-            <li><a href="pages/areas_de_practica.html">Áreas de práctica</a></li>
+            <li><a href="areas_de_practica.html">Áreas de práctica</a></li>
             <li class="dropdown">
                 <a href="#recursos">Recursos <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-content">
-                    <li><a href="pages/articulos.html">Artículos jurídicos</a></li>
-                    <li><a href="pages/guias_legales.html">Guías legales</a></li>
-                    <li><a href="pages/faq.html">Preguntas frecuentes</a></li>
+                    <li><a href="articulos.html">Artículos jurídicos</a></li>
+                    <li><a href="guias_legales.html">Guías legales</a></li>
+                    <li><a href="faq.html">Preguntas frecuentes</a></li>
                 </ul>
             </li>
-            <li><a href="pages/contacto.html">Contacto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
 </header>
   <!-- Secciones -->      
-<!-- Sección Hero -->
-<section class="hero" id="inicio">
-    <!-- Video de fondo -->
-    <video autoplay muted loop playsinline>
-        <source src="videos/fondo-hero.mp4" type="video/mp4">
-    </video>
-    
-    <div class="hero-content">
-        <div class="hero-text">
-            <h1>Justicia con Excelencia</h1>
-            <div class="title-divider"></div>
-            <p>Tu éxito legal es nuestro compromiso.</p>
-        </div>
-        
-        <div class="estadisticas">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-num">98%</div>
-                    <div class="stat-text">Casos exitosos</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-num">30+</div>
-                    <div class="stat-text">Años de experiencia</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-num">150</div>
-                    <div class="stat-text">Clientes satisfechos</div>
-                </div>
+<section id="casos-de-exito" class="seccion-recursos section-parallax">
+    <div class="sidebar">
+        <h2>Casos de Éxito</h2>
+        <p>Historias destacadas de litigios y negociaciones resueltas con éxito.</p>
+    </div>
+    <div class="recursos-content">
+        <div class="tab-content active" id="casos">
+            <div class="recurso-card">
+                <h3>Defensa Corporativa Multimillonaria</h3>
+                <p>Resolución favorable en litigio comercial internacional con impacto en 15 países.</p>
+                <a href="#" class="recurso-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="recurso-card">
+                <h3>Absolución en Caso Penal Complejo</h3>
+                <p>Libertad de cliente acusado en caso de alto perfil mediático.</p>
+                <a href="#" class="recurso-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="recurso-card">
+                <h3>Negociación Colectiva Exitosa</h3>
+                <p>Acuerdo beneficioso para más de 500 empleados en conflicto laboral.</p>
+                <a href="#" class="recurso-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="recurso-card">
+                <h3>Recuperación de Propiedad</h3>
+                <p>Resolución favorable en disputa inmobiliaria de alto valor.</p>
+                <a href="#" class="recurso-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="recurso-card">
+                <h3>Arbitraje Internacional</h3>
+                <p>Victoria en arbitraje comercial entre empresas multinacionales.</p>
+                <a href="#" class="recurso-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="recurso-card">
+                <h3>Protección de Propiedad Intelectual</h3>
+                <p>Defensa exitosa de derechos de autor en caso de plagio.</p>
+                <a href="#" class="recurso-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </div>

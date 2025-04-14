@@ -491,7 +491,7 @@ p {
     align-items: stretch;
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(5, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     position: relative;
 }
@@ -916,7 +916,7 @@ footer {
 
 /* Iconos de redes sociales */
 .social-links {
-    list-style: none;/
+    list-style: none;
     padding: 0;
     display: flex;
     justify-content: center; 

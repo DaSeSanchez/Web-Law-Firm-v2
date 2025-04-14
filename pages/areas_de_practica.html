@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio SQL - Sánchez, Quintana & López</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
@@ -15,7 +15,7 @@
     <!-- Contenedor del logo y título -->
     <div class="header-left">
         <div class="logo">
-            <img src="imgs/logo.png" alt="Logo Estudio SQL">
+            <img src="../imgs/logo.png" alt="Logo Estudio SQL">
         </div>
         <div class="titulo">
             <h1>Estudio SQL</h1>
@@ -25,58 +25,81 @@
     <!-- Menú de navegación -->
     <nav>
         <ul>
-            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="../index.html">Inicio</a></li>
             <li class="dropdown">
                 <a href="#el-estudio">El estudio <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-content">
-                    <li><a href="pages/nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="pages/casos_exito.html">Casos de éxito</a></li>
-                    <li><a href="pages/nuestro_proceso.html">Nuestro proceso</a></li>
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="casos_exito.html">Casos de éxito</a></li>
+                    <li><a href="nuestro_proceso.html">Nuestro proceso</a></li>
                 </ul>
             </li>
-            <li><a href="pages/areas_de_practica.html">Áreas de práctica</a></li>
+            <li><a href="areas_de_practica.html">Áreas de práctica</a></li>
             <li class="dropdown">
                 <a href="#recursos">Recursos <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-content">
-                    <li><a href="pages/articulos.html">Artículos jurídicos</a></li>
-                    <li><a href="pages/guias_legales.html">Guías legales</a></li>
-                    <li><a href="pages/faq.html">Preguntas frecuentes</a></li>
+                    <li><a href="articulos.html">Artículos jurídicos</a></li>
+                    <li><a href="guias_legales.html">Guías legales</a></li>
+                    <li><a href="faq.html">Preguntas frecuentes</a></li>
                 </ul>
             </li>
-            <li><a href="pages/contacto.html">Contacto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
 </header>
   <!-- Secciones -->      
-<!-- Sección Hero -->
-<section class="hero" id="inicio">
-    <!-- Video de fondo -->
-    <video autoplay muted loop playsinline>
-        <source src="videos/fondo-hero.mp4" type="video/mp4">
-    </video>
-    
-    <div class="hero-content">
-        <div class="hero-text">
-            <h1>Justicia con Excelencia</h1>
-            <div class="title-divider"></div>
-            <p>Tu éxito legal es nuestro compromiso.</p>
+    <section id="areas-de-practica" class="areas-de-practica section-parallax">
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <h2>Áreas de Práctica</h2>
+        <p>Explora nuestras especialidades y cómo podemos ayudarte.</p>
+    </div>
+    <!-- Grid de tarjetas -->
+    <div class="areas-grid">
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-briefcase fa-2x"></i></div>
+            <h3>Derecho corporativo</h3>
+            <p>Asesoramiento en la constitución de empresas, contratos comerciales y fusiones.</p>
         </div>
-        
-        <div class="estadisticas">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-num">98%</div>
-                    <div class="stat-text">Casos exitosos</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-num">30+</div>
-                    <div class="stat-text">Años de experiencia</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-num">150</div>
-                    <div class="stat-text">Clientes satisfechos</div>
-                </div>
-            </div>
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-gavel fa-2x"></i></div>
+            <h3>Derecho penal</h3>
+            <p>Defensa legal en procesos penales, derechos del acusado y representación en juicios.</p>
+        </div>
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-users fa-2x"></i></div>
+            <h3>Derecho laboral</h3>
+            <p>Asesoría en despidos, contratos de trabajo, negociaciones colectivas y más.</p>
+        </div>
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-home fa-2x"></i></div>
+            <h3>Derecho inmobiliario</h3>
+            <p>Asesoramiento en compra-venta de inmuebles, contratos de arrendamiento y más.</p>
+        </div>
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-balance-scale fa-2x"></i></div>
+            <h3>Derecho civil</h3>
+            <p>Contratos, responsabilidad civil, herencias, divorcios y más asuntos familiares.</p>
+        </div>
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-university fa-2x"></i></div>
+            <h3>Derecho administrativo</h3>
+            <p>Relaciones entre individuos y organismos públicos, licitaciones y recursos administrativos.</p>
+        </div>
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-piggy-bank fa-2x"></i></div>
+            <h3>Derecho financiero</h3>
+            <p>Asesoría sobre inversiones, créditos, banca y cumplimiento normativo financiero.</p>
+        </div>
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-globe fa-2x"></i></div>
+            <h3>Derecho internacional</h3>
+            <p>Asistencia legal en transacciones internacionales, arbitrajes y tratados.</p>
+        </div>
+        <div class="area-card">
+            <div class="area-icon"><i class="fas fa-copyright fa-2x"></i></div>
+            <h3>Propiedad intelectual</h3>
+            <p>Registro de marcas, patentes, derechos de autor y protección de la innovación.</p>
         </div>
     </div>
 </section>
